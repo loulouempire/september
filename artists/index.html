@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ARTIST | LOULOU EMPIRE</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/home-responsive.css">
+    <link rel="stylesheet" href="css/emailsubscription.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Girassol|Karla|Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="img/icon.png">
+
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157533268-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157533268-1');
+      </script>
+
+  </head>
+  <body>
+    <div class="nb-container">
+      <div class="navigation">
+        <i class="fa fa-remove closeMenuBtn" onclick="removeMenu()"></i>
+        <ul class="txt-2">
+          <li class="sign-up txt-1"><a onclick="open_subscription()">SIGN UP NOW</a> <i class="fa fa-envelope-o"></i> </li>
+          <li class="home-link-li"><a class="nav-link home-link gotoHome">HOME</a></li>
+          <li class="about-link-li"><a class="nav-link about-link gotoAbout">ABOUT</a></li>
+          <li class="news-link-li"><a class="nav-link news-link gotoNews">NEWS</a></li>
+          <li class="music-link-li"><a class="nav-link music-link gotoMusic">MUSIC</a></li>
+          <li class="artist-link-li afterHoverEffect"><a class="nav-link artist-link gotoArtist">ARTIST</a></li>
+          <li class="partner-link-li"><a class="nav-link partner-link gotoStore">STORE</a><span class="coming-soon">COMING-SOON</span></li>
+        </ul>
+        <div class="social-links">
+          <a class="fa fa-facebook"></a>
+          <a class="fa fa-twitter"></a>
+          <a class="fa fa-instagram"></a>
+          <a class="fa fa-youtube"></a>
+          <a class="fa fa-soundcloud"></a>
+        </div>
+      </div>
+
+      <!-- WARNING: ACTUAL PAGE CONTENT -->
+      <div class="home-page-container">
+          <header>
+            <div class="logo-box">
+            <img src="img/logo-w.png">
+            </div>
+            <hr>
+          </header>
+          <div class="menu-box">
+            <i class="menu-btn material-icons" onclick="openMenu()">menu</i>
+          </div>
+
+          <!-- WARNING: ARTIST PAGE CONTENT SECTION -->
+          <div class="artist-page-container">
+            <div class="artist-box" style="background-image: url(img/amonwest.jpg)">
+              <div class="dark-tint"></div>
+              <div class="artist-name centerize txt7" onclick="openAmonWest()">AMON WEST</div>
+            </div>
+          </div>
+          <!-- WARNING: SUBSCRIBE TO LOULOU CALL TO ORDER -->
+          <div class="subscribe-page txt-3">
+            <i class="fa fa-remove close-sub-page" onclick="close_subscription()"></i>
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="subscription_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='../artists/';}"></iframe>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfPIDiXFNUtZ-A5MoL-k_t7aEU5uElozUZQP3oSwnuTi5wT5w/formResponse" method="post" target="subscription_iframe" onsubmit="submitted=true;">
+              <div class="loulou-img">
+                <img src="img/pyramid-logo.jpg" alt="Subscribe to Loulou Empire">
+              </div>
+              <h4 class="connected-txt">GET CONNECTED TO LOULOU EMPIRE</h4>
+              <div class="form-group sub-form-input">
+                <input class="subscribers-email" type="email" name="entry.1045781291" placeholder="Email" required>
+                <br><br>
+                <button type="submit" name="button">Send</button>
+              </div>
+
+            </form>
+          </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/responsive.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <script type="text/javascript" src="js/emailsubscription.js"></script>
+
+    <script type="text/javascript">
+      $('.gotoHome').click(function(){
+         window.location.href='../';
+      });
+      $('.gotoAbout').click(function(){
+         window.location.href='../about/';
+      });
+      $('.gotoArtist').click(function(){
+         window.location.href='../artists/';
+      });
+      $('.gotoStore').click(function(){
+         window.location.href='../store/';
+      });
+      $('.gotoAbout').click(function(){
+         window.location.href='../about/';
+      });
+      $('.gotoNews').click(function(){
+         window.location.href='../news/';
+      });
+      $('.gotoMusic').click(function(){
+         window.location.href='../music/';
+      });
+    </script>
+  </body>
+</html>
